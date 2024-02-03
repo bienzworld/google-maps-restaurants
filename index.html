@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Restaurants Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info-panel">
+        <h2 id="restaurant-name">Selected Restaurant</h2>
+        <p id="restaurant-type">Type: </p>
+        <p id="restaurant-address">Address: </p>
+        <button id="get-directions">Get Directions</button>
+    </div>
+    <div id="filter-panel">
+        <label for="restaurant-type-filter">Filter by Type:</label>
+        <select id="restaurant-type-filter">
+            <option value="all">All</option>
+            <option value="japanese">Japanese</option>
+            <option value="italian">Italian</option>
+            <!-- TODO: Add more options based on the restaurants available in tokyo -->
+        </select>
+    </div>
+    <!-- TODO: Generate API key to access google apis -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=${YOUR_API_KEY}&callback=initMap" async defer></script>
+    <script src="main.js"></script>
+</body>
+</html>
