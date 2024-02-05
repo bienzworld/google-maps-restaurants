@@ -1,0 +1,58 @@
+#map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 900px;
+    width: 100%;
+}
+
+#info-panel {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+
+#filter-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+/* Flexbox for Panels */
+.panel-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Box Shadow and Transitions */
+.panel-content {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.panel-content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Star Styling */
+.restaurant-ratings-stars {
+    font-size: 20px;
+}
+
+.star {
+    color: yellow;
+    margin-right: 5px;
+    text-shadow: 1px 1px 1px #000;
+}

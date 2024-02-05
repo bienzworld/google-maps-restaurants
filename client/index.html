@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Restaurants Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="info-panel" class="panel-content">
+        <div class="panel-header">
+            <h2 id="restaurant-name">Selected Restaurant</h2>
+        </div>
+        <div class="panel-body">
+            <p id="restaurant-image">Images: </p>
+            <p id="restaurant-type">Type: </p>
+            <p id="restaurant-address">Address: </p>
+            <p id="restaurant-ratings">Ratings: </p>
+            <p id="restaurant-ratings-stars"></p>
+            <p id="restaurant-user-rating-total">User ratings total: </p>
+            <p id="restaurant-travel-time">Travel time: </p>
+            <select id="travel-mode">
+                <option value="WALKING">Walking</option>
+                <option value="BICYCLING">Bicycling</option>
+                <option value="DRIVING">Driving</option>
+                <option value="TRANSIT">Transit</option>
+            </select>
+        </div>
+    </div>
+    <div id="filter-panel" class="panel-content">
+        <div class="panel-body">
+            <label for="restaurant-type-filter">Filter by Type:</label>
+            <select id="restaurant-type-filter">
+                <option value="all">All</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="cafe">Cafe</option>
+                <option value="spa">Spa</option>
+                <option value="bar">Bar</option>
+            </select>
+        </div>
+    </div>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB_ToB_1Bx5peJF9WU5L54yFveqmrqasg&loading=async&libraries=places&callback=initMap"></script>
+    <script src="main.js"></script>
+</body>
+</html>
